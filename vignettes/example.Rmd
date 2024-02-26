@@ -1,0 +1,158 @@
+---
+title: "Example"
+author: "Catalina Gonzalez Gomez"
+date: "2/26/2024"
+output: html_document
+vignette: >
+  %\VignetteIndexEntry{formats}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+This is a example to generate a pair of connected signatures using the package cosimu. This example is divided in two sections:
+- first the generation of the primary signature, that will be use as "base";
+- second, the generation of the secondary signature, that will be simulated using different transitions for each layer. 
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "",
+  fig.width=8,
+  fig.height=10,
+  fig.fullwidth=TRUE
+)
+```
+
+```{r}
+library(cosimu)
+set.seed(123)
+```
+# 1 - Primary signature
+## 1.a - Modality layer 
+We are going to generate signatures of 1000 genes. The primary signature will have 5% of up-regulated genes and 5% of down-regulated genes. 
+```{r}
+nb_ent <- 1000
+p_up <- 0.05
+p_down <- 0.05
+
+M1 <- PrimaryModalityObj$new(nb_ent = nb_ent, p_up = p_up, p_down = p_down)
+```
+
+## 1.b - Submodality layer
+```{r}
+prop_sm_up <- c(0.5,0.3,0.2)
+prop_sm_down <- c(0.5,0.3,0.2)
+
+S1 <- PrimarySubmodalityObj$new(mod_obj = M1, prop_sm_up = prop_sm_up, prop_sm_down = prop_sm_down)
+```
+
+## 1.c - Probability layer
+```{r}
+P1 <- PrimaryProbabilityObj$new(nb_ent = nb_ent)
+```
+
+## 1.d - Log Fold-Change vector
+### Quantile functions
+```{r}
+shapes <- c(4,7,12)
+scale <- 0.3
+qf_vect_up <- purrr::map(
+  shapes,
+  function(shape) {
+    local(function(x) {
+      p <- parent.env(environment())
+      p$shape <- shape
+      p$scale_r <- scale
+      qgamma(x,shape,scale = scale)
+    })
+    }
+  )
+qf_vect_nr <- list(
+  function(x) qnorm(x,0,0.15)
+  )
+qf_vect_down <- purrr::map(
+  shapes,
+  function(shape) {
+    local(function(x) {
+      p <- parent.env(environment())
+      p$shape <- shape
+      p$scale <- scale
+      -qgamma(x,shape,scale = scale)
+    })
+    }
+  )
+qf_list <- list(qf_vect_up, qf_vect_nr, qf_vect_down)
+```
+
+### Log fold-change
+```{r}
+mod_vect <- M1$get_values()
+submod_vect <- S1$get_values()
+perc_vect <- P1$get_values()
+
+X1 <- purrr::map_dbl(seq(1, nb_ent), function(i) {
+  m <- mod_vect[i]
+  sm <- submod_vect[i]
+  p <- perc_vect[i]
+  qf <- qf_list[[m]][[sm]]
+  return(qf(p))
+  })
+```
+
+## 1.e - Signature object
+There is not need to do generate independently each one of the layer the `cosimu::PrimarySignatureObj` embeds this three layers and the calculation of the log fold-change vector to simplify the simulation.
+```{r}
+set.seed(100)
+primary_sig <- PrimarySignatureObj$new(nb_ent = nb_ent, p_up = p_up, p_down = p_down,     prop_sm_up = prop_sm_up, prop_sm_down = prop_sm_down, qf_vect_up = qf_vect_up, qf_vect_nr = qf_vect_nr, qf_vect_down = qf_vect_down)
+```
+
+# 2- Secondary Signature
+The same decomposition is possible for the secondary signature, but here we only present the embedded version. First user must define de parametrization for the transition between each layer.
+
+## 2.a- Modality transition
+```{r}
+mod_transition <- "default"
+connectivity_score <- 0.9
+nr_noise <- 0.02
+```
+
+## 2.b- Sub-modality transition
+```{r}
+submod_transition <- "cop"
+copula_submod <- "Frank"
+rho_submod <- 0.9
+eps_submod <- 1e-3
+optim_method_submod <- "Brent"
+```
+
+## 2.c- Probability transition
+```{r}
+proba_transition <- "cop"
+copula_prob <- "Frank"
+theta_prob <- 10
+```
+
+## 2.d - Signature object
+Here we use the same quantile functions than the ones used for the primary object, but it is possible to define a new ones for the secondary one, the only conditions applied for the `deterministic` and `stochastic` sub-modalities transitions are that the we should have the same number of sub-modalities between the deregulated modalities and equal to those used in the primary object.
+```{r}
+set.seed(200)
+secondary_sig <- SecondarySignatureObj$new(
+  prim_sig_obj = primary_sig, mod_transition = mod_transition,
+  connectivity_score = connectivity_score, nr_noise = nr_noise,
+  submod_transition = submod_transition, prop_sm_up = prop_sm_up,
+  prop_sm_down = prop_sm_down, 
+  rho_submod = rho_submod, copula_submod = copula_submod,
+  eps_submod = eps_submod, optim_method_submod = optim_method_submod,
+  proba_transition = proba_transition, theta_prob = theta_prob,
+  copula_prob = copula_prob,
+  qf_vect_up = qf_vect_up, qf_vect_nr = qf_vect_nr, qf_vect_down = qf_vect_down)
+```
+
+# 3- Estimation of the connectivity
+Simple estimation of the connectivity score, between the pair of signatures, using Pearson's correlation score over the top 100 most up and down regulated genes of the primary signature.
+```{r}
+X1 <- primary_sig$get_lfc_vect()
+X2 <- secondary_sig$get_lfc_vect()
+up <- order(X1,decreasing = TRUE)[1:100]
+down <- order(-X1, decreasing = TRUE)[1:100]
+cor(X1[c(up,down)],X2[c(up,down)])
+```

@@ -1,0 +1,36 @@
+Package: cosimu
+Title: Cosimu: Models and methods for the simulation of interconnected differential expression signatures sharing the same basal level
+Version: 2.0
+Authors@R: 
+    person(given = "Catalina",
+           family = "Gonzalez Gomez",
+           role = c("aut", "cre"),
+           email = "catalina.gonzalez-gomez@univ-lyon1.fr");
+    person(given = "Julien",
+           family = "Fouret",
+           role = c("aut", "cre"),
+           email = "julien.fouret@univ-lyon1.fr")
+Description: Cosimu is a package that simulates fold change vectors (signatures) related by a connectivity parameter as input, each element of the vectors represents a gene or transcript log2 fold changes in expression levels. In order to simulate related signautres, we decomposed the signatures into three layers: modality, sub-modality and probability layers.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+    purrr,
+    stats,
+    GenOrd,
+    R6,
+    copula
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+VignetteIndexEntry: "example.Rmd"
+Config/testthat/edition: 3
+Collate: 
+    'class_ModalityObj.R'
+    'class_ProbabilityObj.R'
+    'class_SubmodalityObj.R'
+    'class_SignatureObj.R'
