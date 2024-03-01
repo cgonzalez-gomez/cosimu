@@ -167,7 +167,7 @@ SecondarySignatureObj <- R6::R6Class("SecondarySignatureObj", #nolint
                                        #' @param submod_transition : Sub-modality transition
                                        #' "cop", "independent", "stochastic" or "deterministic".
                                        #' @param proba_transition : Probability transition
-                                       #' "independent", "stochastic" or "deterministic".
+                                       #' "independent", "cop" or "deterministic".
                                        #' @param connectivity_score (optional) : Double between -1 and 1
                                        #' representing the "connectivity" between the two perturbations.
                                        #' Used to generate the transition matrix if the modality transition is not
