@@ -15,13 +15,14 @@ License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
 Imports:
     purrr,
     stats,
     GenOrd,
     R6,
-    copula
+    copula,
+    LaplacesDemon,
+    yaml
 Suggests: 
     testthat (>= 3.0.0),
     knitr,
@@ -34,3 +35,5 @@ Collate:
     'class_ProbabilityObj.R'
     'class_SubmodalityObj.R'
     'class_SignatureObj.R'
+    'utils.R'
+RoxygenNote: 7.2.3

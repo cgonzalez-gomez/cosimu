@@ -12,20 +12,20 @@ Object used as third layer for the connected signature
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{SecondaryProbabilityObj$new()}}
-\item \href{#method-clone}{\code{SecondaryProbabilityObj$clone()}}
+\item \href{#method-SecondaryProbabilityObj-new}{\code{SecondaryProbabilityObj$new()}}
+\item \href{#method-SecondaryProbabilityObj-clone}{\code{SecondaryProbabilityObj$clone()}}
 }
 }
-\if{html}{
-\out{<details open ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="ProbabilityObj" data-id="get_values">}\href{../../cosimu/html/ProbabilityObj.html#method-get_values}{\code{cosimu::ProbabilityObj$get_values()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details open><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="ProbabilityObj" data-id="get_values"><a href='../../cosimu/html/ProbabilityObj.html#method-ProbabilityObj-get_values'><code>cosimu::ProbabilityObj$get_values()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-SecondaryProbabilityObj-new"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondaryProbabilityObj-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize \code{SecondaryProbabilityObj} object.
 \subsection{Usage}{
@@ -72,8 +72,8 @@ probability layer by the probability "cop" transition.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-SecondaryProbabilityObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondaryProbabilityObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

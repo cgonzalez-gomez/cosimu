@@ -14,24 +14,24 @@ and \code{PrimaryProbabilityObj}.
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{PrimarySignatureObj$new()}}
-\item \href{#method-clone}{\code{PrimarySignatureObj$clone()}}
+\item \href{#method-PrimarySignatureObj-new}{\code{PrimarySignatureObj$new()}}
+\item \href{#method-PrimarySignatureObj-clone}{\code{PrimarySignatureObj$clone()}}
 }
 }
-\if{html}{
-\out{<details open ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_base_expression">}\href{../../cosimu/html/SignatureObj.html#method-get_base_expression}{\code{cosimu::SignatureObj$get_base_expression()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_lfc_vect">}\href{../../cosimu/html/SignatureObj.html#method-get_lfc_vect}{\code{cosimu::SignatureObj$get_lfc_vect()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_modality_obj">}\href{../../cosimu/html/SignatureObj.html#method-get_modality_obj}{\code{cosimu::SignatureObj$get_modality_obj()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_probability_obj">}\href{../../cosimu/html/SignatureObj.html#method-get_probability_obj}{\code{cosimu::SignatureObj$get_probability_obj()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_submodality_obj">}\href{../../cosimu/html/SignatureObj.html#method-get_submodality_obj}{\code{cosimu::SignatureObj$get_submodality_obj()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details open><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_base_expression"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_base_expression'><code>cosimu::SignatureObj$get_base_expression()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_lfc_vect"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_lfc_vect'><code>cosimu::SignatureObj$get_lfc_vect()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_modality_obj"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_modality_obj'><code>cosimu::SignatureObj$get_modality_obj()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_probability_obj"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_probability_obj'><code>cosimu::SignatureObj$get_probability_obj()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_submodality_obj"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_submodality_obj'><code>cosimu::SignatureObj$get_submodality_obj()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-PrimarySignatureObj-new"></a>}}
+\if{latex}{\out{\hypertarget{method-PrimarySignatureObj-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize \code{PrimarySignatureObj} object.
 \subsection{Usage}{
@@ -100,8 +100,8 @@ Default \code{NA}.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-PrimarySignatureObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-PrimarySignatureObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

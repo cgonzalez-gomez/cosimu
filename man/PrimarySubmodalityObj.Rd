@@ -12,22 +12,22 @@ Object used as second layer for the independent ("non connected") signature
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{PrimarySubmodalityObj$new()}}
-\item \href{#method-clone}{\code{PrimarySubmodalityObj$clone()}}
+\item \href{#method-PrimarySubmodalityObj-new}{\code{PrimarySubmodalityObj$new()}}
+\item \href{#method-PrimarySubmodalityObj-clone}{\code{PrimarySubmodalityObj$clone()}}
 }
 }
-\if{html}{
-\out{<details open ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_nb_submod_by_mod">}\href{../../cosimu/html/SubmodalityObj.html#method-get_nb_submod_by_mod}{\code{cosimu::SubmodalityObj$get_nb_submod_by_mod()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_prop_list">}\href{../../cosimu/html/SubmodalityObj.html#method-get_prop_list}{\code{cosimu::SubmodalityObj$get_prop_list()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_values">}\href{../../cosimu/html/SubmodalityObj.html#method-get_values}{\code{cosimu::SubmodalityObj$get_values()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details open><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_nb_submod_by_mod"><a href='../../cosimu/html/SubmodalityObj.html#method-SubmodalityObj-get_nb_submod_by_mod'><code>cosimu::SubmodalityObj$get_nb_submod_by_mod()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_prop_list"><a href='../../cosimu/html/SubmodalityObj.html#method-SubmodalityObj-get_prop_list'><code>cosimu::SubmodalityObj$get_prop_list()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_values"><a href='../../cosimu/html/SubmodalityObj.html#method-SubmodalityObj-get_values'><code>cosimu::SubmodalityObj$get_values()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-PrimarySubmodalityObj-new"></a>}}
+\if{latex}{\out{\hypertarget{method-PrimarySubmodalityObj-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize \code{PrimarySubmodalityObj} object.
 \subsection{Usage}{
@@ -53,8 +53,8 @@ Default \code{NULL}.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-PrimarySubmodalityObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-PrimarySubmodalityObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

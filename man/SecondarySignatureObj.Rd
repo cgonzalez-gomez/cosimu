@@ -14,25 +14,25 @@ and \code{SecondaryProbabilityObj}.
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{SecondarySignatureObj$new()}}
-\item \href{#method-get_connectivities}{\code{SecondarySignatureObj$get_connectivities()}}
-\item \href{#method-clone}{\code{SecondarySignatureObj$clone()}}
+\item \href{#method-SecondarySignatureObj-new}{\code{SecondarySignatureObj$new()}}
+\item \href{#method-SecondarySignatureObj-get_connectivities}{\code{SecondarySignatureObj$get_connectivities()}}
+\item \href{#method-SecondarySignatureObj-clone}{\code{SecondarySignatureObj$clone()}}
 }
 }
-\if{html}{
-\out{<details open ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_base_expression">}\href{../../cosimu/html/SignatureObj.html#method-get_base_expression}{\code{cosimu::SignatureObj$get_base_expression()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_lfc_vect">}\href{../../cosimu/html/SignatureObj.html#method-get_lfc_vect}{\code{cosimu::SignatureObj$get_lfc_vect()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_modality_obj">}\href{../../cosimu/html/SignatureObj.html#method-get_modality_obj}{\code{cosimu::SignatureObj$get_modality_obj()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_probability_obj">}\href{../../cosimu/html/SignatureObj.html#method-get_probability_obj}{\code{cosimu::SignatureObj$get_probability_obj()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_submodality_obj">}\href{../../cosimu/html/SignatureObj.html#method-get_submodality_obj}{\code{cosimu::SignatureObj$get_submodality_obj()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details open><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_base_expression"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_base_expression'><code>cosimu::SignatureObj$get_base_expression()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_lfc_vect"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_lfc_vect'><code>cosimu::SignatureObj$get_lfc_vect()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_modality_obj"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_modality_obj'><code>cosimu::SignatureObj$get_modality_obj()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_probability_obj"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_probability_obj'><code>cosimu::SignatureObj$get_probability_obj()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SignatureObj" data-id="get_submodality_obj"><a href='../../cosimu/html/SignatureObj.html#method-SignatureObj-get_submodality_obj'><code>cosimu::SignatureObj$get_submodality_obj()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-SecondarySignatureObj-new"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySignatureObj-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize \code{SecondarySignatureObj} object.
 \subsection{Usage}{
@@ -77,7 +77,7 @@ or "customized".}
 "cop", "independent", "stochastic" or "deterministic".}
 
 \item{\code{proba_transition}}{: Probability transition
-"independent", "stochastic" or "deterministic".}
+"independent", "cop" or "deterministic".}
 
 \item{\code{qf_vect_up}}{(optional) : list of quantile functions associated
 to each sub-modality of the up-regulated modality. Default \code{NA}.}
@@ -159,8 +159,8 @@ Default \code{NULL}.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_connectivities"></a>}}
-\if{latex}{\out{\hypertarget{method-get_connectivities}{}}}
+\if{html}{\out{<a id="method-SecondarySignatureObj-get_connectivities"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySignatureObj-get_connectivities}{}}}
 \subsection{Method \code{get_connectivities()}}{
 Get the vector with the expected and the effective connectivity scores.
 For all transitions different to "cop" they should be identical.
@@ -173,8 +173,8 @@ list with connectivities
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-SecondarySignatureObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySignatureObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

@@ -12,25 +12,25 @@ Object used as second layer for the connected signature
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{SecondarySubmodalityObj$new()}}
-\item \href{#method-get_optim_res}{\code{SecondarySubmodalityObj$get_optim_res()}}
-\item \href{#method-get_rho}{\code{SecondarySubmodalityObj$get_rho()}}
-\item \href{#method-get_list_transition_mat}{\code{SecondarySubmodalityObj$get_list_transition_mat()}}
-\item \href{#method-clone}{\code{SecondarySubmodalityObj$clone()}}
+\item \href{#method-SecondarySubmodalityObj-new}{\code{SecondarySubmodalityObj$new()}}
+\item \href{#method-SecondarySubmodalityObj-get_optim_res}{\code{SecondarySubmodalityObj$get_optim_res()}}
+\item \href{#method-SecondarySubmodalityObj-get_rho}{\code{SecondarySubmodalityObj$get_rho()}}
+\item \href{#method-SecondarySubmodalityObj-get_list_transition_mat}{\code{SecondarySubmodalityObj$get_list_transition_mat()}}
+\item \href{#method-SecondarySubmodalityObj-clone}{\code{SecondarySubmodalityObj$clone()}}
 }
 }
-\if{html}{
-\out{<details open ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_nb_submod_by_mod">}\href{../../cosimu/html/SubmodalityObj.html#method-get_nb_submod_by_mod}{\code{cosimu::SubmodalityObj$get_nb_submod_by_mod()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_prop_list">}\href{../../cosimu/html/SubmodalityObj.html#method-get_prop_list}{\code{cosimu::SubmodalityObj$get_prop_list()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_values">}\href{../../cosimu/html/SubmodalityObj.html#method-get_values}{\code{cosimu::SubmodalityObj$get_values()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details open><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_nb_submod_by_mod"><a href='../../cosimu/html/SubmodalityObj.html#method-SubmodalityObj-get_nb_submod_by_mod'><code>cosimu::SubmodalityObj$get_nb_submod_by_mod()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_prop_list"><a href='../../cosimu/html/SubmodalityObj.html#method-SubmodalityObj-get_prop_list'><code>cosimu::SubmodalityObj$get_prop_list()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="SubmodalityObj" data-id="get_values"><a href='../../cosimu/html/SubmodalityObj.html#method-SubmodalityObj-get_values'><code>cosimu::SubmodalityObj$get_values()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-SecondarySubmodalityObj-new"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySubmodalityObj-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize \code{SecondarySubmodalityObj} object.
 \subsection{Usage}{
@@ -87,8 +87,8 @@ details. Default "Brent".}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_optim_res"></a>}}
-\if{latex}{\out{\hypertarget{method-get_optim_res}{}}}
+\if{html}{\out{<a id="method-SecondarySubmodalityObj-get_optim_res"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySubmodalityObj-get_optim_res}{}}}
 \subsection{Method \code{get_optim_res()}}{
 Get the optimization results. See \code{optim} method.
 \subsection{Usage}{
@@ -100,8 +100,8 @@ list with optimization results
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_rho"></a>}}
-\if{latex}{\out{\hypertarget{method-get_rho}{}}}
+\if{html}{\out{<a id="method-SecondarySubmodalityObj-get_rho"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySubmodalityObj-get_rho}{}}}
 \subsection{Method \code{get_rho()}}{
 Get the vector with the expected and the effective correlation (rho)
 used for "cop" transition.
@@ -114,8 +114,8 @@ list with two elements expected rho and effective one
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_list_transition_mat"></a>}}
-\if{latex}{\out{\hypertarget{method-get_list_transition_mat}{}}}
+\if{html}{\out{<a id="method-SecondarySubmodalityObj-get_list_transition_mat"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySubmodalityObj-get_list_transition_mat}{}}}
 \subsection{Method \code{get_list_transition_mat()}}{
 Get a list of the transition matrix between all the sub-modalities
 of two modalities.
@@ -128,8 +128,8 @@ list of transition matrix
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-SecondarySubmodalityObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-SecondarySubmodalityObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

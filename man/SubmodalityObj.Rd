@@ -20,15 +20,15 @@ Note : NR modality is supposed to have only one submodality.
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-get_prop_list}{\code{SubmodalityObj$get_prop_list()}}
-\item \href{#method-get_values}{\code{SubmodalityObj$get_values()}}
-\item \href{#method-get_nb_submod_by_mod}{\code{SubmodalityObj$get_nb_submod_by_mod()}}
-\item \href{#method-clone}{\code{SubmodalityObj$clone()}}
+\item \href{#method-SubmodalityObj-get_prop_list}{\code{SubmodalityObj$get_prop_list()}}
+\item \href{#method-SubmodalityObj-get_values}{\code{SubmodalityObj$get_values()}}
+\item \href{#method-SubmodalityObj-get_nb_submod_by_mod}{\code{SubmodalityObj$get_nb_submod_by_mod()}}
+\item \href{#method-SubmodalityObj-clone}{\code{SubmodalityObj$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_prop_list"></a>}}
-\if{latex}{\out{\hypertarget{method-get_prop_list}{}}}
+\if{html}{\out{<a id="method-SubmodalityObj-get_prop_list"></a>}}
+\if{latex}{\out{\hypertarget{method-SubmodalityObj-get_prop_list}{}}}
 \subsection{Method \code{get_prop_list()}}{
 Gets the list of the  sub-modalities proportions of a specific modality
 (or each modality)
@@ -51,8 +51,8 @@ propotions vectors.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_values"></a>}}
-\if{latex}{\out{\hypertarget{method-get_values}{}}}
+\if{html}{\out{<a id="method-SubmodalityObj-get_values"></a>}}
+\if{latex}{\out{\hypertarget{method-SubmodalityObj-get_values}{}}}
 \subsection{Method \code{get_values()}}{
 Gets the a  sub-modalities vector
 \subsection{Usage}{
@@ -65,8 +65,8 @@ sub-modality of each entity.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_nb_submod_by_mod"></a>}}
-\if{latex}{\out{\hypertarget{method-get_nb_submod_by_mod}{}}}
+\if{html}{\out{<a id="method-SubmodalityObj-get_nb_submod_by_mod"></a>}}
+\if{latex}{\out{\hypertarget{method-SubmodalityObj-get_nb_submod_by_mod}{}}}
 \subsection{Method \code{get_nb_submod_by_mod()}}{
 Gets the number of  sub-modalities in a specific modality
 (or each modality)
@@ -88,8 +88,8 @@ an integer equal to the number of entities or a vector of values.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-SubmodalityObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-SubmodalityObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

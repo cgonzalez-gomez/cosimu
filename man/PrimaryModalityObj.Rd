@@ -13,23 +13,23 @@ Object used as first layer for the independent
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{PrimaryModalityObj$new()}}
-\item \href{#method-clone}{\code{PrimaryModalityObj$clone()}}
+\item \href{#method-PrimaryModalityObj-new}{\code{PrimaryModalityObj$new()}}
+\item \href{#method-PrimaryModalityObj-clone}{\code{PrimaryModalityObj$clone()}}
 }
 }
-\if{html}{
-\out{<details open ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_nb_ent">}\href{../../cosimu/html/ModalityObj.html#method-get_nb_ent}{\code{cosimu::ModalityObj$get_nb_ent()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_p_down">}\href{../../cosimu/html/ModalityObj.html#method-get_p_down}{\code{cosimu::ModalityObj$get_p_down()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_p_up">}\href{../../cosimu/html/ModalityObj.html#method-get_p_up}{\code{cosimu::ModalityObj$get_p_up()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_values">}\href{../../cosimu/html/ModalityObj.html#method-get_values}{\code{cosimu::ModalityObj$get_values()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details open><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_nb_ent"><a href='../../cosimu/html/ModalityObj.html#method-ModalityObj-get_nb_ent'><code>cosimu::ModalityObj$get_nb_ent()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_p_down"><a href='../../cosimu/html/ModalityObj.html#method-ModalityObj-get_p_down'><code>cosimu::ModalityObj$get_p_down()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_p_up"><a href='../../cosimu/html/ModalityObj.html#method-ModalityObj-get_p_up'><code>cosimu::ModalityObj$get_p_up()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="cosimu" data-topic="ModalityObj" data-id="get_values"><a href='../../cosimu/html/ModalityObj.html#method-ModalityObj-get_values'><code>cosimu::ModalityObj$get_values()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-PrimaryModalityObj-new"></a>}}
+\if{latex}{\out{\hypertarget{method-PrimaryModalityObj-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize \code{PrimaryModalityObj} object.
 \subsection{Usage}{
@@ -53,8 +53,8 @@ Default \code{NULL}.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-PrimaryModalityObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-PrimaryModalityObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

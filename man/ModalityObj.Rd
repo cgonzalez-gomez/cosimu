@@ -10,16 +10,16 @@ and their get functions.
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-get_nb_ent}{\code{ModalityObj$get_nb_ent()}}
-\item \href{#method-get_p_up}{\code{ModalityObj$get_p_up()}}
-\item \href{#method-get_p_down}{\code{ModalityObj$get_p_down()}}
-\item \href{#method-get_values}{\code{ModalityObj$get_values()}}
-\item \href{#method-clone}{\code{ModalityObj$clone()}}
+\item \href{#method-ModalityObj-get_nb_ent}{\code{ModalityObj$get_nb_ent()}}
+\item \href{#method-ModalityObj-get_p_up}{\code{ModalityObj$get_p_up()}}
+\item \href{#method-ModalityObj-get_p_down}{\code{ModalityObj$get_p_down()}}
+\item \href{#method-ModalityObj-get_values}{\code{ModalityObj$get_values()}}
+\item \href{#method-ModalityObj-clone}{\code{ModalityObj$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_nb_ent"></a>}}
-\if{latex}{\out{\hypertarget{method-get_nb_ent}{}}}
+\if{html}{\out{<a id="method-ModalityObj-get_nb_ent"></a>}}
+\if{latex}{\out{\hypertarget{method-ModalityObj-get_nb_ent}{}}}
 \subsection{Method \code{get_nb_ent()}}{
 Gets the number of entities in the object
 \subsection{Usage}{
@@ -31,8 +31,8 @@ an integer equal to the number of entities
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_p_up"></a>}}
-\if{latex}{\out{\hypertarget{method-get_p_up}{}}}
+\if{html}{\out{<a id="method-ModalityObj-get_p_up"></a>}}
+\if{latex}{\out{\hypertarget{method-ModalityObj-get_p_up}{}}}
 \subsection{Method \code{get_p_up()}}{
 Gets the proportion of up regulated entities
 \subsection{Usage}{
@@ -45,8 +45,8 @@ entities
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_p_down"></a>}}
-\if{latex}{\out{\hypertarget{method-get_p_down}{}}}
+\if{html}{\out{<a id="method-ModalityObj-get_p_down"></a>}}
+\if{latex}{\out{\hypertarget{method-ModalityObj-get_p_down}{}}}
 \subsection{Method \code{get_p_down()}}{
 Gets the proportion of down regulated entities
 \subsection{Usage}{
@@ -59,8 +59,8 @@ entities
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_values"></a>}}
-\if{latex}{\out{\hypertarget{method-get_values}{}}}
+\if{html}{\out{<a id="method-ModalityObj-get_values"></a>}}
+\if{latex}{\out{\hypertarget{method-ModalityObj-get_values}{}}}
 \subsection{Method \code{get_values()}}{
 Gets the modalities vector
 \subsection{Usage}{
@@ -73,8 +73,8 @@ modality of each entity.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-ModalityObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-ModalityObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

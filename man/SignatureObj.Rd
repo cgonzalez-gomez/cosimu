@@ -11,17 +11,17 @@ Global Signature object
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-get_modality_obj}{\code{SignatureObj$get_modality_obj()}}
-\item \href{#method-get_submodality_obj}{\code{SignatureObj$get_submodality_obj()}}
-\item \href{#method-get_probability_obj}{\code{SignatureObj$get_probability_obj()}}
-\item \href{#method-get_lfc_vect}{\code{SignatureObj$get_lfc_vect()}}
-\item \href{#method-get_base_expression}{\code{SignatureObj$get_base_expression()}}
-\item \href{#method-clone}{\code{SignatureObj$clone()}}
+\item \href{#method-SignatureObj-get_modality_obj}{\code{SignatureObj$get_modality_obj()}}
+\item \href{#method-SignatureObj-get_submodality_obj}{\code{SignatureObj$get_submodality_obj()}}
+\item \href{#method-SignatureObj-get_probability_obj}{\code{SignatureObj$get_probability_obj()}}
+\item \href{#method-SignatureObj-get_lfc_vect}{\code{SignatureObj$get_lfc_vect()}}
+\item \href{#method-SignatureObj-get_base_expression}{\code{SignatureObj$get_base_expression()}}
+\item \href{#method-SignatureObj-clone}{\code{SignatureObj$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_modality_obj"></a>}}
-\if{latex}{\out{\hypertarget{method-get_modality_obj}{}}}
+\if{html}{\out{<a id="method-SignatureObj-get_modality_obj"></a>}}
+\if{latex}{\out{\hypertarget{method-SignatureObj-get_modality_obj}{}}}
 \subsection{Method \code{get_modality_obj()}}{
 Gets the modality object
 \subsection{Usage}{
@@ -33,8 +33,8 @@ Gets the modality object
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_submodality_obj"></a>}}
-\if{latex}{\out{\hypertarget{method-get_submodality_obj}{}}}
+\if{html}{\out{<a id="method-SignatureObj-get_submodality_obj"></a>}}
+\if{latex}{\out{\hypertarget{method-SignatureObj-get_submodality_obj}{}}}
 \subsection{Method \code{get_submodality_obj()}}{
 Gets the sub-modality object
 \subsection{Usage}{
@@ -46,8 +46,8 @@ Gets the sub-modality object
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_probability_obj"></a>}}
-\if{latex}{\out{\hypertarget{method-get_probability_obj}{}}}
+\if{html}{\out{<a id="method-SignatureObj-get_probability_obj"></a>}}
+\if{latex}{\out{\hypertarget{method-SignatureObj-get_probability_obj}{}}}
 \subsection{Method \code{get_probability_obj()}}{
 Gets the probability object
 \subsection{Usage}{
@@ -59,8 +59,8 @@ Gets the probability object
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_lfc_vect"></a>}}
-\if{latex}{\out{\hypertarget{method-get_lfc_vect}{}}}
+\if{html}{\out{<a id="method-SignatureObj-get_lfc_vect"></a>}}
+\if{latex}{\out{\hypertarget{method-SignatureObj-get_lfc_vect}{}}}
 \subsection{Method \code{get_lfc_vect()}}{
 Gets the log2 fold change vector
 \subsection{Usage}{
@@ -72,8 +72,8 @@ log2 fold change vector
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_base_expression"></a>}}
-\if{latex}{\out{\hypertarget{method-get_base_expression}{}}}
+\if{html}{\out{<a id="method-SignatureObj-get_base_expression"></a>}}
+\if{latex}{\out{\hypertarget{method-SignatureObj-get_base_expression}{}}}
 \subsection{Method \code{get_base_expression()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{SignatureObj$get_base_expression()}\if{html}{\out{</div>}}
@@ -81,8 +81,8 @@ log2 fold change vector
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-SignatureObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-SignatureObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

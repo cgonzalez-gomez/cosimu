@@ -70,7 +70,7 @@ SecondaryProbabilityObj <- R6::R6Class("SecondaryProbabilityObj", #nolint
                                                                copula, theta, nbins, ncpus) {
                                            prim_perc_vect <- prim_perc_obj$get_values()
                                            nb_ent <- length(prim_perc_vect)
-                                           private$probability_vect <- switch(proba_transition,
+                                           private$probability_vect <- switch(as.character(proba_transition),
                                                                               independent = runif(nb_ent),
                                                                               deterministic = prim_perc_vect,
                                                                               cop = private$cop_transition(prim_perc_vect = prim_perc_vect,

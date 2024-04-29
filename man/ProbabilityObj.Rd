@@ -11,13 +11,13 @@ Global Probability object
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-get_values}{\code{ProbabilityObj$get_values()}}
-\item \href{#method-clone}{\code{ProbabilityObj$clone()}}
+\item \href{#method-ProbabilityObj-get_values}{\code{ProbabilityObj$get_values()}}
+\item \href{#method-ProbabilityObj-clone}{\code{ProbabilityObj$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_values"></a>}}
-\if{latex}{\out{\hypertarget{method-get_values}{}}}
+\if{html}{\out{<a id="method-ProbabilityObj-get_values"></a>}}
+\if{latex}{\out{\hypertarget{method-ProbabilityObj-get_values}{}}}
 \subsection{Method \code{get_values()}}{
 Gets the a probability vector
 \subsection{Usage}{
@@ -30,8 +30,8 @@ probability of each entity.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-ProbabilityObj-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-ProbabilityObj-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{
