@@ -54,11 +54,11 @@ used when the probability transition is "cop".}
 \item{\code{theta}}{(optional): parameter of the copula for the "cop"
 transition. If:
 \itemize{
-\item cop = "Frank": theta \link{-Inf, Inf}; theta → Inf comonotonicity ;
+\item cop = "Frank": theta \verb{[-Inf, Inf]}; theta → Inf comonotonicity ;
 theta → -Inf countermonotonicity; theta → 0 independence copula.
 \item cop = "Plackett": theta (0, Inf) \ {1}; theta → Inf comonotonicity ;
 theta → 0 countermonotonicity; theta → 1 independence copula.
-\item cop = "Gauss": theta \link{-1,1} ; theta → 1 comonotonicity ;
+\item cop = "Gauss": theta \verb{[-1,1]} ; theta → 1 comonotonicity ;
 theta → -1 countermonotonicity; theta → 0 independence copula
 }}
 

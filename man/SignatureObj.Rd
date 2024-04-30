@@ -75,10 +75,14 @@ log2 fold change vector
 \if{html}{\out{<a id="method-SignatureObj-get_base_expression"></a>}}
 \if{latex}{\out{\hypertarget{method-SignatureObj-get_base_expression}{}}}
 \subsection{Method \code{get_base_expression()}}{
+Gets the base expression
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{SignatureObj$get_base_expression()}\if{html}{\out{</div>}}
 }
 
+\subsection{Returns}{
+base_expression vector
+}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-SignatureObj-clone"></a>}}

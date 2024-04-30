@@ -11,7 +11,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "julien.fouret@univ-lyon1.fr")
 Description: Cosimu is a package that simulates fold change vectors (signatures) related by a connectivity parameter as input, each element of the vectors represents a gene or transcript log2 fold changes in expression levels. In order to simulate related signautres, we decomposed the signatures into three layers: modality, sub-modality and probability layers.
-License: GPL (>= 3)
+License: GPL (>= 3) + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

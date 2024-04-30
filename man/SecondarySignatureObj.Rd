@@ -34,7 +34,8 @@ and \code{SecondaryProbabilityObj}.
 \if{html}{\out{<a id="method-SecondarySignatureObj-new"></a>}}
 \if{latex}{\out{\hypertarget{method-SecondarySignatureObj-new}{}}}
 \subsection{Method \code{new()}}{
-Initialize \code{SecondarySignatureObj} object.
+Initialize
+\code{SecondarySignatureObj} object.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{SecondarySignatureObj$new(
   prim_sig_obj,
@@ -67,93 +68,149 @@ Initialize \code{SecondarySignatureObj} object.
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{prim_sig_obj}}{: \code{PrimarySignatureObj} used as base for the
-simulation of the connected object.}
+\item{\code{prim_sig_obj}}{:
+\code{PrimarySignatureObj} used as base
+for the simulation of the connected
+object.}
 
-\item{\code{mod_transition}}{: Modality transition "default"
-or "customized".}
-
-\item{\code{submod_transition}}{: Sub-modality transition
-"cop", "independent", "stochastic" or "deterministic".}
-
-\item{\code{proba_transition}}{: Probability transition
-"independent", "cop" or "deterministic".}
-
-\item{\code{qf_vect_up}}{(optional) : list of quantile functions associated
-to each sub-modality of the up-regulated modality. Default \code{NA}.}
-
-\item{\code{qf_vect_nr}}{(optional) : list of quantile functions associated
-to each sub-modality of the non-deregulated modality. Default \code{NA}.}
-
-\item{\code{qf_vect_down}}{(optional) : list of quantile functions associated
-to each sub-modality of the down-deregulated modality. Default \code{NA}.}
-
-\item{\code{connectivity_score}}{(optional) : Double between -1 and 1
-representing the "connectivity" between the two perturbations.
-Used to generate the transition matrix if the modality transition is not
+\item{\code{mod_transition}}{: Modality
+transition "default" or
 "customized".}
 
-\item{\code{transition_mat}}{(optional) : transition matrix used if
-\code{mod_transition} = "customized". Default \code{NA}.}
+\item{\code{submod_transition}}{:
+Sub-modality transition "cop",
+"independent", "stochastic" or
+"deterministic".}
 
-\item{\code{nr_noise}}{(optional) : Double between 0 and 0.5 representing the
-noise induced by the non-deregulated entities during the "default"
-transition. Default \code{NA}.}
+\item{\code{proba_transition}}{: Probability
+transition "independent", "cop" or
+"deterministic".}
 
-\item{\code{prop_sm_up}}{(optional) : vector of proportions of the
-sub-modalities of the up-regulated entities. Default \code{NA}.}
+\item{\code{qf_vect_up}}{(optional) : list of
+quantile functions associated to
+each sub-modality of the
+up-regulated modality. Default \code{NA}.}
 
-\item{\code{prop_sm_down}}{(optional) : vector of proportions of the
-sub-modalities of the down-deregulated entities. Default \code{NA}.}
+\item{\code{qf_vect_nr}}{(optional) : list of
+quantile functions associated to
+each sub-modality of the
+non-deregulated modality. Default
+\code{NA}.}
 
-\item{\code{rho_submod}}{(optional) : correlation to be reached by the
-sub-modality "cop" transition.}
+\item{\code{qf_vect_down}}{(optional) : list
+of quantile functions associated to
+each sub-modality of the
+down-deregulated modality. Default
+\code{NA}.}
 
-\item{\code{copula_submod}}{(optional) : 'Gauss','Plackett' or 'Frank' copula
-used when the sub-modality transition is "cop". Default \code{NA}.}
+\item{\code{connectivity_score}}{(optional) :
+Double between -1 and 1 representing
+the "connectivity" between the two
+perturbations. Used to generate the
+transition matrix if the modality
+transition is not "customized".}
 
-\item{\code{eps_submod}}{(optional) : Error between the expected correlation
-(\code{rho_submod}) and the one estimated with the copula function.
+\item{\code{transition_mat}}{(optional) :
+transition matrix used if
+\code{mod_transition} = "customized".
 Default \code{NA}.}
 
-\item{\code{optim_method_submod}}{(optional) : Optimization method used
-during the sub-modality "cop" transition. See \code{optim} for more
-details. Default "Brent".}
+\item{\code{nr_noise}}{(optional) : Double
+between 0 and 0.5 representing the
+noise induced by the non-deregulated
+entities during the "default"
+transition. Default \code{NA}.}
 
-\item{\code{copula_prob}}{(optional) : 'Gauss','Plackett' or 'Frank' copula
-used when the probability transition is "cop". Default \code{Frank}.}
+\item{\code{prop_sm_up}}{(optional) : vector
+of proportions of the sub-modalities
+of the up-regulated entities.
+Default \code{NA}.}
 
-\item{\code{theta_prob}}{: parameter of the copula for the "cop" transition. If:
+\item{\code{prop_sm_down}}{(optional) :
+vector of proportions of the
+sub-modalities of the
+down-deregulated entities. Default
+\code{NA}.}
+
+\item{\code{rho_submod}}{(optional) :
+correlation to be reached by the
+sub-modality "cop" transition.}
+
+\item{\code{copula_submod}}{(optional) :
+'Gauss','Plackett' or 'Frank' copula
+used when the sub-modality
+transition is "cop". Default \code{NA}.}
+
+\item{\code{eps_submod}}{(optional) : Error
+between the expected correlation
+(\code{rho_submod}) and the one estimated
+with the copula function. Default
+\code{NA}.}
+
+\item{\code{optim_method_submod}}{(optional)
+: Optimization method used during
+the sub-modality "cop" transition.
+See \code{optim} for more details.
+Default "Brent".}
+
+\item{\code{copula_prob}}{(optional) :
+'Gauss','Plackett' or 'Frank' copula
+used when the probability transition
+is "cop". Default \code{Frank}.}
+
+\item{\code{theta_prob}}{: parameter of the
+copula for the "cop" transition. If:
 \itemize{
-\item cop = "Frank": theta \link{-Inf, Inf}; theta → Inf comonotonicity ;
-theta → -Inf countermonotonicity; theta → 0 independence copula.
-\item cop = "Plackett": theta (0, Inf) \ {1}; theta → Inf comonotonicity ;
-theta → 0 countermonotonicity; theta → 1 independence copula.
-\item cop = "Gauss": theta \link{-1,1} ; theta → 1 comonotonicity ;
-theta → -1 countermonotonicity; theta → 0 independence copula
-Default 10.
+\item cop = "Frank": theta \verb{[-Inf, Inf]};
+theta → Inf comonotonicity ; theta →
+-Inf countermonotonicity; theta → 0
+independence copula. - cop =
+"Plackett": theta (0, Inf) \ {1};
+theta → Inf comonotonicity ; theta →
+0 countermonotonicity; theta → 1
+independence copula. - cop =
+"Gauss": theta \verb{[-1,1]} ; theta → 1
+comonotonicity ; theta → -1
+countermonotonicity; theta → 0
+independence copula Default 10.
 }}
 
-\item{\code{nbins_prob}}{(optional): number of bins used to generate the
-probability layer by the probability "cop" transition. Default 1e3.}
+\item{\code{nbins_prob}}{(optional): number
+of bins used to generate the
+probability layer by the probability
+"cop" transition. Default 1e3.}
 
-\item{\code{base_expression}}{(optional) : Boolean set to \code{TRUE} if their is a
-need to correct the base expression. Default \code{FALSE}.}
+\item{\code{base_expression}}{(optional) :
+Boolean set to \code{TRUE} if their is a
+need to correct the base expression.
+Default \code{FALSE}.}
 
-\item{\code{up_means}}{(optional) : vector of means of the up sub-modalities use
-if \code{base_expression = TRUE}, to apply the base expression correction.}
+\item{\code{up_means}}{(optional) : vector of
+means of the up sub-modalities use
+if \code{base_expression = TRUE}, to
+apply the base expression
+correction.}
 
-\item{\code{nr_means}}{(optional) : vector with the mean of the non-deregulated
-use if \code{base_expression = TRUE}, to apply the base expression correction.}
+\item{\code{nr_means}}{(optional) : vector
+with the mean of the non-deregulated
+use if \code{base_expression = TRUE}, to
+apply the base expression
+correction.}
 
-\item{\code{down_means}}{(optional) : vector of means of the down sub-modalities
-use if \code{base_expression = TRUE}, to apply the base expression correction.}
+\item{\code{down_means}}{(optional) : vector
+of means of the down sub-modalities
+use if \code{base_expression = TRUE}, to
+apply the base expression
+correction.}
 
-\item{\code{ncpus}}{(optional) : number of cpus for parallel calculation used in
-'cop' probability transition. Default 1.}
+\item{\code{ncpus}}{(optional) : number of
+cpus for parallel calculation used
+in 'cop' probability transition.
+Default 1.}
 
-\item{\code{entity_id}}{(optional) : character vector with the entity names.
-Default \code{NULL}.}
+\item{\code{entity_id}}{(optional) :
+character vector with the entity
+names. Default \code{NULL}.}
 }
 \if{html}{\out{</div>}}
 }

@@ -54,11 +54,11 @@ SecondaryProbabilityObj <- R6::R6Class("SecondaryProbabilityObj", #nolint
                                          #' "independent", "cop" or "deterministic".
                                          #' @param theta (optional): parameter of the copula for the "cop"
                                          #' transition. If:
-                                         #' - cop = "Frank": theta [-Inf, Inf]; theta → Inf comonotonicity ;
+                                         #' - cop = "Frank": theta `[-Inf, Inf]`; theta → Inf comonotonicity ;
                                          #' theta → -Inf countermonotonicity; theta → 0 independence copula.
                                          #' - cop = "Plackett": theta (0, Inf) \ {1}; theta → Inf comonotonicity ;
                                          #' theta → 0 countermonotonicity; theta → 1 independence copula.
-                                         #' - cop = "Gauss": theta [-1,1] ; theta → 1 comonotonicity ;
+                                         #' - cop = "Gauss": theta `[-1,1]` ; theta → 1 comonotonicity ;
                                          #' theta → -1 countermonotonicity; theta → 0 independence copula
                                          #' @param copula (optional) : 'Gauss','Plackett' or 'Frank' copula
                                          #' used when the probability transition is "cop".

@@ -33,6 +33,10 @@ SignatureObj <- R6::R6Class("SignatureObj", #nolint
                               get_lfc_vect = function() {
                                 return(private$lfc_vect)
                               },
+                              #' @description
+                              #' Gets the base expression
+                              #'
+                              #' @return base_expression vector
                               get_base_expression = function() {
                                 return(private$base_expression)
                               }
