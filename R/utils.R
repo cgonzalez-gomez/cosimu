@@ -191,7 +191,7 @@ load_dist <- function(yaml_file){
     function(x) qnorm(x,mean=  parameters$nr_means,sd = parameters$nr_sd)
   )
   parameters$qf_vect_down <- purrr::map2(
-    parameters$shapes.down,parameters$scales.up,
+    parameters$shapes.down,parameters$scales.down,
     function(shape,scale) {
       local(function(x) {
         p <- parent.env(environment())
@@ -332,6 +332,7 @@ load_simple_param <- function(yaml_file){
 #' @param names_ent names of the genes or transcripts.
 #' @param seed random seed.
 #' @import stats graphics
+#' @export
 read_counts_gen <- function(num_reps=c(3,3), p_nb_mol=300,size=NULL,
                             size_factor = 3,fold_changes,num_reads=1000000,
                             TP_analysis=FALSE,length_ent = NULL,
