@@ -282,14 +282,6 @@ SecondarySignatureObj <- R6::R6Class("SecondarySignatureObj", #nolint
                                                                                        }
                                                                                      })
                                          }
-                                       },
-                                       #' @description
-                                       #' Get the vector with the expected and the effective connectivity scores.
-                                       #' For all transitions different to "cop" they should be identical.
-                                       #'
-                                       #' @return list with connectivities
-                                       get_connectivities = function() {
-                                         return(private$mod_obj$get_connectivities())
                                        }
                                      )
 )

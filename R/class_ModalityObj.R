@@ -135,14 +135,14 @@ SecondaryModalityObj <- R6::R6Class("SecondaryModalityObj", #nolint
                                       nr_noise = NULL,
                                       transition_mat = NULL,
                                       # @description
-                                      # Generates a nested list with the symmetric transition probabilities
+                                      # Generates a matrix with the symmetric transition probabilities
                                       # between modalities.
                                       #
                                       # @param nr_noise: Double between 0 and 0.5 representing the noise induced
                                       # by the non-deregulated entities.
                                       # @param connectivity_score : Double between -1 and 1 representing the
                                       # "connectivity" between the two perturbations.
-                                      # @return A nested list representing the symmetric probability
+                                      # @return A matrix representing the symmetric probability
                                       # transition matrix.
                                       sym_transition_mat_generator = function(connectivity_score, nr_noise) {
                                         p_id <- 0.5 * (1 + connectivity_score) * (1 - nr_noise / 2)
